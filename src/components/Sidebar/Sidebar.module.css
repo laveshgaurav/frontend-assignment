@@ -1,0 +1,128 @@
+.SidebarContainer {
+  width: 300px;
+  height: 100%;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background-color: #181818;
+  transition: 0.3s ease-in;
+}
+
+.SidebarContainer .Header {
+}
+
+.Header .Brand {
+  display: flex;
+  align-items: center;
+  /* column-gap: 0.75rem; */
+  margin-bottom: 1.5rem;
+}
+
+.Brand img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.Brand h1 {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.Header .Menu {
+  width: 100%;
+  padding: 0.75rem;
+}
+
+.Menu ul {
+  list-style: none;
+}
+
+.Menu ul li:nth-child(1) {
+  background-color: #282828;
+}
+
+.Menu ul li {
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease-in;
+}
+
+.Menu ul li:hover {
+  background-color: #282828;
+}
+
+.Menu ul li a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+
+.Menu ul li a span {
+  font-size: 0.8rem;
+}
+
+.SidebarContainer .Footer {
+}
+
+.Footer .Terms {
+  margin-bottom: 1rem;
+}
+
+.Footer .Terms p {
+  font-size: 0.75rem;
+}
+
+.Footer .Admin {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+.Admin .Profile {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+
+.Admin .LogoutButton {
+  border: none;
+  background-color: #f0f0f0;
+  color: #181818;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.Profile img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.Profile .AdminInfo {
+  color: black;
+}
+
+.AdminInfo p {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.AdminInfo span {
+  background-color: #181818;
+  color: white;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 2rem;
+}
