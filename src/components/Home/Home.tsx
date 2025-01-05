@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Sidebar from "../Sidebar/Sidebar";
 import Styles from "./Home.module.css";
+import Dashboard from "../Dashboard/Dashboard";
 
 function Home() {
   // States
@@ -24,28 +25,8 @@ function Home() {
           marginLeft: toggleSidebar ? "300px" : "0px",
         }}
       >
-        <div className={Styles.DashboardContaier}>
-          <div className={Styles.Header}>
-            <button
-              className={Styles.Menu}
-              onClick={handleToggleSidebar}
-            >
-              <i className="fa-solid fa-bars"></i>
-            </button>
-            <div className={Styles.Control}>
-              <button>
-                <i className="fa-solid fa-magnifying-glass"></i>
-              </button>
-              <button>
-                <i className="fa-regular fa-heart"></i>
-              </button>
-              <button>
-                <i className="fa-solid fa-globe"></i>
-                <p>EN</p>
-              </button>
-            </div>
-          </div>
-        </div>
+        <Dashboard handleToggleSidebar={handleToggleSidebar} />
+        <div></div>
       </div>
     </div>
   );

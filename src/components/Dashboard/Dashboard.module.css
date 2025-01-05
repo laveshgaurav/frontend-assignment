@@ -1,0 +1,97 @@
+.DashboardContaier {
+  background: linear-gradient(
+    90deg,
+    #e5e4c6,
+    #c1ddd6,
+    #ccc8db,
+    #cfc6dd,
+    #e9bfd5
+  );
+  width: 100%;
+  padding: 1.25rem;
+}
+
+.DashboardContaier .Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.DashboardContaier h1 {
+  color: #181818;
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.Header .Menu {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: white;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  color: #181818;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.Header .Control {
+  display: flex;
+  column-gap: 1rem;
+  align-items: center;
+}
+
+.Control button {
+  height: 2.5rem;
+  width: 2.5rem;
+  background-color: white;
+  border-radius: 2rem;
+  border: none;
+  outline: none;
+  color: #181818;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  cursor: pointer;
+  column-gap: 0.25rem;
+}
+
+.Control button:nth-child(3) {
+  width: 6rem;
+}
+
+.DashboardContaier .CardContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.CardContainer .Card {
+  background-color: #ffffff53;
+  padding: 1rem;
+  border-radius: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  color: #181818;
+}
+
+.Card h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.Card .Data h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.Card .Data p {
+  font-size: 0.9rem;
+}
