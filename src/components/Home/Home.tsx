@@ -2,6 +2,7 @@ import { useState } from "react";
 import Sidebar from "../Sidebar/Sidebar";
 import Styles from "./Home.module.css";
 import Dashboard from "../Dashboard/Dashboard";
+import Databox from "../Databox/Databox";
 
 function Home() {
   // States
@@ -26,7 +27,7 @@ function Home() {
         }}
       >
         <Dashboard handleToggleSidebar={handleToggleSidebar} />
-        <div></div>
+        <Databox />
       </div>
     </div>
   );

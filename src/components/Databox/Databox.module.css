@@ -1,0 +1,141 @@
+.DataContainer {
+  width: 100%;
+  padding: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.DataContainer .TabContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  background-color: #f0f0f0;
+  padding: 0.25rem;
+  border-radius: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.TabContainer .Tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75rem;
+  border-radius: 2rem;
+  background-color: #f0f0f0;
+  border: none;
+  cursor: pointer;
+  color: #181818;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.TabContainer .ActiveTab {
+  background-color: #f880bf;
+  color: #ffffff;
+}
+
+.TableContainer {
+  overflow-x: auto;
+  width: 100%;
+}
+
+.TableContainer table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.TableContainer table thead tr {
+  border-bottom: 1px solid #eee;
+}
+
+.TableContainer table th {
+  background-color: white;
+  padding: 0.75rem;
+  font-weight: 500;
+  text-align: left;
+  color: #919191;
+  white-space: nowrap;
+  font-size: 0.9rem;
+}
+
+td {
+  color: #181818;
+  padding: 0.75rem;
+  font-weight: 400;
+  text-align: left;
+  /* white-space: nowrap; */
+}
+
+.SerialNum {
+  color: #f880bf;
+  white-space: nowrap;
+}
+
+td .Profile {
+  display: flex;
+  align-items: flex-start;
+  column-gap: 0.5rem;
+}
+
+td .Date h2 {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #181818;
+}
+
+td .Date h3 {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #919191;
+}
+
+tbody tr {
+  border-bottom: 1px solid #eeeeee;
+}
+
+.Profile img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+
+.Pagination td .Control {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.5rem;
+  cursor: pointer;
+  column-gap: 1rem;
+}
+
+.Control h3 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #919191;
+}
+
+.ButtonEnabled {
+  background-color: #f880bf;
+  outline: none;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  border: 2px solid #f880bf;
+}
+
+.ButtonDisabled {
+  background-color: white;
+  outline: none;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: not-allowed;
+  border: 2px solid #f880bf;
+  color: #f880bf;
+}
+
+@media screen and (max-width: 720px) {
+  td {
+    white-space: nowrap;
+  }
+}
